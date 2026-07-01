@@ -1,0 +1,121 @@
+.card {
+  background: #fff;
+  border: 1px solid #e5e9ef;
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgba(15, 61, 92, 0.05);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(15, 61, 92, 0.1);
+  border-color: #cdd6e0;
+}
+
+.completed {
+  opacity: 0.75;
+  background: #f8fafb;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: #6b7c8f;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1a2b3c;
+  line-height: 1.35;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusPending {
+  background: #fef3cd;
+  color: #8a6d0a;
+}
+
+.statusInProgress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.statusCompleted {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #5c6b7a;
+  line-height: 1.5;
+}
+
+.dueDate {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #3d4f61;
+}
+
+.dueLabel {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.editButton,
+.deleteButton {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.editButton {
+  background: #eef6f9;
+  color: #0f3d5c;
+  border-color: #c5dde8;
+}
+
+.editButton:hover {
+  background: #dceef5;
+}
+
+.deleteButton {
+  background: #fff;
+  color: #b42318;
+  border-color: #f5c2c0;
+}
+
+.deleteButton:hover {
+  background: #fef3f2;
+}

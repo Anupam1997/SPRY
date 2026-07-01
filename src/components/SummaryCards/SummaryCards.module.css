@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.875rem;
+  padding: 1.125rem 1.25rem;
+  border: 1px solid #e5e9ef;
+  box-shadow: 0 2px 8px rgba(15, 61, 92, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 61, 92, 0.1);
+}
+
+.label {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #5c6b7a;
+  font-weight: 500;
+}
+
+.value {
+  margin: 0.375rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a2b3c;
+  line-height: 1;
+}
+
+.total {
+  border-top: 3px solid #1a6b8a;
+}
+
+.pending {
+  border-top: 3px solid #e6a817;
+}
+
+.inProgress {
+  border-top: 3px solid #3b82f6;
+}
+
+.completed {
+  border-top: 3px solid #22a06b;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
